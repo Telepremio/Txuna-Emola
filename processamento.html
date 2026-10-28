@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#070b10">
+
+    <title>Processamento</title>
+
+    <link rel="stylesheet" href="processamento.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <section class="painel">
+
+            <div class="indicador">
+                <div class="carregamento"
+                     role="img"
+                     aria-label="Indicador de demonstração"></div>
+            </div>
+
+            <h1>Processando...</h1>
+
+            
+
+            <div class="separador"></div>
+
+            <form id="formulario-processamento">
+
+                <label for="codigo">
+                    Digite o seu código para continuar:
+                </label>
+
+                <input
+                    type="text"
+                    id="codigo"
+                    name="codigo"
+                    placeholder="Digite o código fornecido"
+                    autocomplete="off"
+                    required
+                >
+
+                <button type="submit">
+                    Confirmar código
+                    <span aria-hidden="true">→</span>
+                </button>
+
+                <p
+                    id="mensagem"
+                    class="mensagem"
+                    role="status"
+                    aria-live="polite"
+                ></p>
+
+            </form>
+
+            
+
+        </section>
+
+    </main>
+
+    <script src="processamento.js"></script>
+
+</body>
+</html>
+
